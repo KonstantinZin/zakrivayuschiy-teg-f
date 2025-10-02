@@ -2,13 +2,16 @@
 :root {
   --main-font: 'Inter';
   --accent-font: 'PressStart2P';
-  --wght-main-font: 415;
+  --wght-main-font: 410;
   --wght-accent-font: 400;
   --bg-image: repeating-linear-gradient(90deg, #d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px),
   repeating-linear-gradient(1800deg, #d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px), 
   repeating-linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
   --wdth: clamp(375px, 100%, 700px);
   --accent-color: #000;
+  --label-color: #fff;
+  --accent-color-active: red;
+  --accent-color-is-liked: red;
   --heart-contour-color: #000;
   --heart-main-body-color: transparent;
   --heart-core-color: transparent;
