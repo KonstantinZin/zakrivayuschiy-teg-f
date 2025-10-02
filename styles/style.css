@@ -74,16 +74,16 @@
 .title-card {
     margin-left: 10px;
     vertical-align: middle;
-    font-variation-settings: 'wght' 715;
     font-size: 18px;
+    font-variation-settings: 'wght' 715;
 }
 
 .picture {
     width: clamp(371px, 100%, 696px);
     border: 2px solid black;
-    aspect-ratio: 1 / 1;
     object-fit: cover;
     object-position: center;
+    aspect-ratio: 1 / 1;
 }
 
 .card__text {
@@ -135,14 +135,14 @@
 }
 
 .card__icon-button {
+    display: flex;
+    margin-bottom: 2px;
     border: 2px solid transparent;
     padding: 0;
     outline: none;
     background-color: #fff;
     transition: border-color 0.3s ease;
     cursor: pointer;
-    display: flex;
-    margin-bottom: 2px;
 }
 
 .container__for-save {
@@ -159,8 +159,8 @@
     border: 2px solid #000;
     padding: 17px;
     font-size: 14px;
-    white-space: nowrap;
     background-color: #fff;
+    white-space: nowrap;
 }
 
 .icon-floppy {
@@ -193,9 +193,9 @@
 
 @supports ((text-stroke: 1px #fff) or (-webkit-text-stroke: 1px #fff)) {
     .label {
+         text-shadow: none;
         -webkit-text-stroke: 1px var(--label-color, #fff);
          text-stroke: 1px var(--label-color, #fff);
-         text-shadow: none;
     }
 }
 
@@ -398,7 +398,7 @@
         max-width: 342px;
     }
 
-    .dialog__button  {
+    .dialog__button {
         width: 259px;
         margin-right: 14px;
     }
