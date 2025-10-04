@@ -35,7 +35,7 @@
     align-items: center;
     gap: 20px;
     width: var(--wdth, clamp(375px, 100%, 700px));
-    min-height: 368px;
+    padding: 128px;
     border: 2px solid black;
     font-family: var(--accent-font, fantasy);
     font-weight: var(--wght-accent-font, 400);
@@ -57,7 +57,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 53px;
+    gap: 60px;
     margin-top: 102px;
 }
 
@@ -68,7 +68,7 @@
 }
 
 .article {
-    margin-bottom: 22px;
+    margin-bottom: 18px;
 }
 
 .title-card {
@@ -76,6 +76,7 @@
     vertical-align: middle;
     font-size: 18px;
     font-variation-settings: 'wght' 715;
+    margin-bottom: 4px;
 }
 
 .picture {
@@ -90,13 +91,13 @@
     display: flex;
     flex-direction: column;
     gap: 25px;
-    padding-top: 28px;
+    padding-top: 26px;
     padding-bottom: 5px;
 }
 
 .card-text {
     margin-right: 25px;
-    margin-left: 26px;
+    margin-left: 25px;
     font-size: 18px;
     line-height: 21px;
 }
@@ -130,7 +131,7 @@
 
 .card__like-button {
     min-width: 130px;
-    margin-top: 22px;
+    margin-top: 17px;
     padding: 9px;
 }
 
@@ -154,10 +155,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 8px;
+    gap: 2px;
     max-width: 335px;
     border: 2px solid #000;
-    padding: 17px;
+    padding: 14px;
     font-size: 14px;
     background-color: #fff;
     white-space: nowrap;
@@ -165,8 +166,8 @@
 
 .icon-floppy {
     flex-shrink: 0;
-    width: 21px;
-    height: 22px;
+    width: 32px;
+    height: 29px;
     mix-blend-mode: difference;
 }
 
@@ -371,7 +372,7 @@
 
 @media (width <= 375px) {
     .header {
-        min-height: 327px;
+       padding: 119px 0 119px 0;
     }
 
     .main {
@@ -386,6 +387,7 @@
     .save-button {
         flex-direction: column;
         gap: 0;
+        padding: 18px;
     }
 
     .icon-floppy {
@@ -394,12 +396,17 @@
         margin-left: 7px;
     }
 
+    .dialog__container {
+        margin: 30px 35px 0 35px;
+    }
+
     .dialog:open {
         max-width: 342px;
+        background-color: rgba(255, 255, 255, 0.5);
     }
 
     .dialog__button {
-        width: 259px;
-        margin-right: 14px;
+        width: 260px;
+        margin-right: 2px;
     }
 }
